@@ -2,7 +2,7 @@
 describe("flight Booking",()=>{
 
  it.skip("flight Booking",()=>{
-
+   //testing of git
     cy.visit("https://www.goibibo.com/")
     cy.get(".sc-eWfVMQ.diuirR>li:nth-child(1)").click()
 
