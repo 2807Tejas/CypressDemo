@@ -12,7 +12,9 @@ describe("flight Booking",()=>{
     
     cy.get(".sc-eLwHnm.hHxEGr.fswWidgetPlaceholder").eq(1).type("p",{force:true})
     cy.wait(5000)
-    .contains("PNQ, Pune Airport").click()   
+    .contains("PNQ, Pune Airport").click() 
+    
+    
    })
    it("Flight booking ",()=>{
       cy.visit("https://www.goibibo.com/")
