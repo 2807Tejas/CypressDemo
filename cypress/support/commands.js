@@ -24,8 +24,8 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-/// < reference types = "Cypress" /> 
-/// < reference types= "Cypress-xpath" />
+/// <reference types = "Cypress" /> 
+/// <reference types= "Cypress-xpath" />
 
 // Cypress.Commands.add('login',(email,password)=>{
 //     cy.visit('https://staging-app.eosaregion.com/')
@@ -43,3 +43,4 @@
 //     cy.get("[value='SUBMIT']").click()
 // })
 require('@cypress/xpath');
+ 
