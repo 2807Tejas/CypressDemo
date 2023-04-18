@@ -1,5 +1,5 @@
 //import 'cypress-file-upload'
-describe('CSSselector',function(){
+describe('CSSselector Locator',function(){
     it('CSSselector',()=> {
   
       cy.visit("https://staging-app.eosaregion.com/")
