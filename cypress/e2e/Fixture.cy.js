@@ -2,9 +2,9 @@
 
 describe("Fixture",()=>{
 
-  it.skip("Testcase",()=>{
+      it.skip("Testcase",()=>{
 
-    cy.visit("https://staging-app.eosaregion.com/")
+      cy.visit("https://staging-app.eosaregion.com/")
       cy.get(".text-uppercase.website-login-btn.btn.btn-secondary").click()
       
       cy.fixture("EoSouth").then((data)=>{
@@ -25,13 +25,15 @@ it("OrangeHRM", function(){
 
   cy.fixture('OrangeHRM.json ').then((data)=>{ 
                
-  })
+  
 
    cy.visit("https://opensource-demo.orangehrmlive.com/")
-   cy.get("[name='username']").type(Username)
-   cy.get("[type='password']").type(Password)
+   cy.get("[name='username']").type(data.Username)
+   cy.get("[type='password']").type(data.Password)
    cy.get("[type='submit']").click()
   
 })
  
+})
+
 })

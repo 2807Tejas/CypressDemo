@@ -1,10 +1,12 @@
-describe('Drag and drop', () => {
-      
-    it("Drag and drp",()=>{
 
+        describe('Assignment 4.3',()=>{
+            it('Drag and Drop',function(){
+            cy.visit('https://demoqa.com/droppable')
+            cy.get('#draggable').drag('#simpleDropContainer > #droppable')
+    
+        })
 
         
     })
 
 
-});
