@@ -15,7 +15,7 @@ describe("Custom Command",()=>{
       cy.visit("http://www.webdriveruniversity.com/")
       cy.get('#contact-us').invoke('removeAttr','target').click()
 
-      cy.Loginweb("Tejas","Lastname","tpavaskar781@gmail.com","for testing ")
+      cy.Loginweb("Tejas","Lastname","tpavaskar781@gmail.com","for testing")
 
 
    })
