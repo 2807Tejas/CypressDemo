@@ -27,7 +27,7 @@ describe("flight Booking",()=>{
          cy.get('[type="text"]').type('Mumbai',{force:true})
          cy.contains('Mumbai, India').click({force:true})
          //cy.xpath("//div[@class='DayPicker-Month']/div[3]/div[2]/div[p=5]").click()
-         cy.get("[class='fswFld__title']").should("have.text","18 Apr'23")
+         cy.get("[class='fswFld__title']").should("have.text","25 Apr'23")
          cy.get("[aria-label='Next Month']").click()
          cy.xpath("//div[@class='DayPicker-Month'][1]/div[3]/div[3]/div[p=18]").click()
          cy.get(".sc-cvZCdy.iEJrkB").click({force:true})

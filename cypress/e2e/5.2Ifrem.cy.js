@@ -9,7 +9,7 @@ describe('Ifrem', () => {
         .then(cy.wrap);
 
 
-        iframe.clear().type("welcome in josh ")
+        iframe.clear().type("welcome in josh {cmd+a}")
 
     })
 });
