@@ -1,6 +1,6 @@
 const cypress = require("cypress");
 const { defineConfig } = require("cypress");
-const Mochawesome = require("mochawesome");
+// const Mochawesome = require("mochawesome");
 
 module.exports = defineConfig({
   //reporter:'cypress-Mochawesome-reporter',
@@ -9,7 +9,7 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
     setupNodeEvents(on, config) {
-    require('cypress-mochawesome-reporter/plugin')(on);           //for HTML Report 
+      require('cypress-mochawesome-reporter/plugin')(on);
      
       // implement node event listeners here
     },
