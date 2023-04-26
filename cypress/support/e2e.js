@@ -42,4 +42,4 @@ Cypress.on("uncaught:exception",(error,runnable)=>{
 //before(() => {
     //cy.log('I run before every test in every spec file!!!!!!')
  // })
-//import 'cypress-Mochawesome-reporter/register';
+import 'cypress-Mochawesome-reporter/register';
