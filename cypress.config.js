@@ -5,7 +5,7 @@ const Mochawesome = require("mochawesome");
 module.exports = defineConfig({
   //reporter:'cypress-Mochawesome-reporter',
   chromeWebSecurity: false,
-
+  reporter: 'cypress-mochawesome-reporter',
   e2e: {
     setupNodeEvents(on, config) {
      

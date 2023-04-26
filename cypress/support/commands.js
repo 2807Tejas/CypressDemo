@@ -27,13 +27,12 @@
 /// <reference types = "Cypress" /> 
 /// <reference types= "Cypress-xpath" />
 
-// Cypress.Commands.add('login',(email,password)=>{
-//     cy.visit('https://staging-app.eosaregion.com/')
-//     cy.get('.d-flex > .text-uppercase').click()
-//     cy.get("[type='email']").type(email)
-//     cy.get("[type='password']").type(password)
-//     cy.get("[type='submit']").click()
-// })
+Cypress.Commands.add('login', (email, password) => {
+    cy.get('.d-flex > .text-uppercase').click()
+    cy.get("[type='email']").type(email)
+    cy.get("[type='password']").type(password)
+    cy.get("[type='submit']").click()
+})
 
 // Cypress.Commandduologues.add('Loginweb',(name,lastname,email,comment)=>{
 //     cy.get('[name="first_name"]').type(name)
@@ -43,6 +42,12 @@
 //     cy.get("[value='SUBMIT']").click()
 // })
 require('@cypress/xpath');
- 
- require('@4tw/cypress-drag-drop')
+
+require('@4tw/cypress-drag-drop')
 // require('@4tw/cypress-drag-drop')
+
+
+
+Cypress.Commands.add('course', (courseOfferd) => {
+    cy.get("#wpforms-49-field_5").select(courseOfferd)
+})

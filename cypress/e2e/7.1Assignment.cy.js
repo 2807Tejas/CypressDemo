@@ -1,9 +1,7 @@
 describe("Assignment No.7",()=>{
    it("Ecommarce website ",()=>{
 
-         // cy.visit("https://automationteststore.com/")
-         // cy.get('.nav-pills > :nth-child(2) > [href="https://automationteststore.com/index.php?rt=product/category&path=68"]').click()
-
+         
 
           cy.visit("https://www.flipkart.com/")
           cy.xpath('//div[@class="_37M3Pb"]/div[2]').click()
