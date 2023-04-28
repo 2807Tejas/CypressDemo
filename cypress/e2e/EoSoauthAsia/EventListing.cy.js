@@ -1,6 +1,6 @@
 describe("FL Member Listing",()=>{
     beforeEach("",()=>{
-        //cy.visit("https://staging-app.eosaregion.com/")
+        cy.visit("https://staging-app.eosaregion.com/")
         //cy.clicklink("loginapp")
         cy.login("tejas.pavaskar@joshsoftware.com","Tejas@123")
   
