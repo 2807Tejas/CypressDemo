@@ -4,6 +4,8 @@ const l = new Login()
 
 describe("Assignment No.7", () => {
     it("Ecommarce website ", () => {
+          
+         
 
         cy.visit("https://automationteststore.com/index.php?rt=account/login")
         cy.get("#customer_menu_top").click()
@@ -14,7 +16,7 @@ describe("Assignment No.7", () => {
         l.getPassword().type('@Tejas@123')
         l.getSumnitButton().click()
         cy.wait(5000)
-
+         
 
         cy.get("#filter_keyword").type('Men')
         cy.wait(2000)
@@ -26,6 +28,9 @@ describe("Assignment No.7", () => {
         cy.get('.productpagecart').click()
         cy.get('#cart_checkout1').click()
 
+        cy.wait(4000)
+        cy.xpath("//div[@class='col-md-9 col-xs-12 mt20']/div/h1/span").should('have.text',' Checkout Confirmation',{force:true})
+
 
     })
 
@@ -35,5 +40,10 @@ describe("Assignment No.7", () => {
         l.getSumnitButton().click()
 
     })
+   
+    
+        
+
+    
 
 })
